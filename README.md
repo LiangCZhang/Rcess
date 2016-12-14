@@ -1,0 +1,2 @@
+# Rcess
+This package utilize the theory of economies  of  scale  and  scope  (developed by Baumol, Panzar, &amp; Willig (1982)) to generate the estimates of average output costs, economies of scale, and economiece of scope for  different  types  of  multi-output production  industries. So far, this package can reproduce the estimates using FFCQ-M cost function (see Zhang, Worthington, and Hu (in press) for details). This pacakge also offers a quick plotting method to infer the existence of economies  of  scale  and  scope. Please see demo below for details. 
