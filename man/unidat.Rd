@@ -32,13 +32,27 @@
   \item{g8}{One for Institutions located in NT, otherwise zero}
 }}
 \source{
-Zhang, L.-C., Worthington, A. C., & Hu, M. (in press). Cost economies in the provision of higher education for international students: Australian evidence. Higher Education. doi: \href{http://dx.doi.org/10.1007/s10734-016-0078-9}{10.1007/s10734-016-0078-9}
+Australian Government Department of Education and Training. (n.d.-a). Higher education publications: Finance
+publication. Retrieved from \href{https://www.education.gov.au/finance-publication}https://www.education.gov.au/finance-publication
+
+Australian Government Department of Education and Training. (n.d.-b). uCube - Higher education statistics.
+Retrieved from \href{http://highereducationstatistics.education.gov.au/Default.aspx}http://highereducationstatistics.education.gov.au/Default.aspx
+
+Zhang, L.-C., Worthington, A. C., & Hu, M. (in press). Cost economies in the provision
+of higher education for international students: Australian evidence. Higher Education. doi: \href{http://dx.doi.org/10.1007/s10734-016-0078-9}{10.1007/s10734-016-0078-9}
 }
 \usage{
 unidat
 }
 \description{
-A panel data containing the cost, outputs, and prices of 37 Australian public universities over the period from 2003 to 2012
+A panel data containing the cost, outputs, and prices of 37 Australian public universities
+over the period from 2003 to 2012
+}
+\details{
+This data is formatted based on Zhang et al. (in press) and collected from multiple sources. For outputs and control variables (y, q, z, and g),
+ they are from Australian Government Department of Education and Training (n.d.-b)  For Total operating expenditure and price variables (c and w), they are
+ from Australian Government Department of Education and Training (n.d.-a). Please see the data copyright
+ here \href{https://www.education.gov.au/copyright} https://www.education.gov.au/copyright
 }
 \keyword{datasets}
 

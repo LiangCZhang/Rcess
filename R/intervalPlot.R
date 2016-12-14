@@ -44,7 +44,6 @@
 #' respectively) at the 5% significance level. Thus, there is evidence for the existence of scale
 #' and scope economies (if their intervals are higher than the threshold) or diseconomies (if their
 #' intervals are lower than the threshold).
-#' @import
 #' @export
 intervalPlot <- function(intervalData = intervalData, estimates,
   meanLevels = intervalData$meanLevels, lowerLevel = intervalData$Lo_GSE,

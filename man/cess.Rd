@@ -23,13 +23,13 @@ cess(data, outputName, priceName, controlName, model,
 \item{form}{A cost function character.}
 }
 \value{
-An CSV file in your working directory containing estimates of average costs,
+Estimates of scale and scope economies including their standard errors (SE), lower
+        interval(Lo) and upper interval(Hi)
 }
 \description{
 Calculate estimates of costs and economies of scale and scope from 25 to 200 \% levels at means
 }
 \examples{
-
 ##Reproduce results of Zhang et al. (2016)
 data(unidat)
 data = unidat
@@ -44,13 +44,19 @@ form = "FFCQ-M"), start = list(b0 = 600, b1 = 0, b2 = 0,
                                bz9 = 0, bz10 = 0, bz11 = 0, bz12 = 0, bz13 = 0), data = unidat,
                                trace = F)
 vcovCL <- clusterEst(model = model , cluster = unidat$unicode)$vcovCL
-cess(data=data, outputName = colnames(unidat)[7:11],priceName = colnames(unidat)[4:6],controlName = colnames(unidat)[12:24], model=model, vcovCL=vcovCL)
+cess(data=data, outputName = colnames(unidat)[7:11],priceName = colnames(unidat)[4:6],
+controlName = colnames(unidat)[12:24], model=model, vcovCL=vcovCL)
 
 }
 \author{
 Liang-Cheng Zhang
 }
 \references{
-Zhang, L.-C., Worthington, A. C., & Hu, M. (in press). Cost economies in the provision of higher education for international students: Australian evidence. Higher Education. doi: \href{http://dx.doi.org/10.1007/s10734-016-0078-9}{10.1007/s10734-016-0078-9}
+Zhang, L.-C., Worthington, A. C., & Hu, M. (in press). Cost economies in the provision of
+higher education for international students: Australian evidence. Higher Education. doi: \href{http://dx.doi.org/10.1007/s10734-016-0078-9}{10.1007/s10734-016-0078-9}
+
+Zhang, L.-C., & Worthington, A. C. (2015). Evaluating the accuracy of scope economies: comparisons among
+delta method, bootstrap, and Bayesian approach. Paper presented at Australian Conference of Economists
+PhD Colloquium. Retrieved from \href{http://www98.griffith.edu.au/dspace/handle/10072/69409}http://www98.griffith.edu.au/dspace/handle/10072/69409
 }
 

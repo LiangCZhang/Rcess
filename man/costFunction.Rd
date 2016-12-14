@@ -4,8 +4,7 @@
 \alias{costFunction}
 \title{Generate the right format of cost function for calculating economies of scale and scope.}
 \usage{
-costFunction(costName, outputName, priceName, controlName, form = c("FFCQ-A",
-  "FFCQ-M"))
+costFunction(costName, outputName, priceName, controlName, form = c("FFCQ-M"))
 }
 \arguments{
 \item{costName}{A character string containing the name of the dependent (cost) variable.}
@@ -26,9 +25,6 @@ Generate the right format of cost function for calculating economies of scale an
 }
 \details{
 This function returns flexible fixed cost quadratic (FFCQ) function formula based on the classification of Mayo (1984). You can find the applications in Zhang et al. (in press).
-The FFCQ-A function is as follows
-\deqn{$C^{FFCQ-A}\left(\boldsymbol{y},\boldsymbol{w};\boldsymbol{\beta }\right)\boldsymbol{=}F\left(\boldsymbol{y}\boldsymbol{;}\boldsymbol{\beta }\right)\boldsymbol{+}A\boldsymbol{(}\boldsymbol{w}\boldsymbol{;}\boldsymbol{\beta }\boldsymbol{)}$\newline $\mathrm{\ \ \ \ \ \ \ \ \ \ \ }=\left({\beta }_0+\sum_{i=1}{{\beta }_{0i}}F_i+\sum_{i=1}{{\beta }_i}y_i+0.5\sum_{i=1}{{\sum_{j=1}{{{\beta }_{ij}y}_i}y}_j}\right)+\sum_{l=1}{{\beta }_{wl}}w_l
-}
 }
 \examples{
 ##Specifiy arguments with user-identified names
