@@ -19,7 +19,7 @@
 #' delta method, bootstrap, and Bayesian approach. Paper presented at Australian Conference of Economists
 #' PhD Colloquium. Retrieved from \href{http://www98.griffith.edu.au/dspace/handle/10072/69409}http://www98.griffith.edu.au/dspace/handle/10072/69409
 #' @examples
-#' ##Reproduce results of Zhang et al. (2016)
+#' ##Reproduce results of Zhang et al. (in press)
 #' data(unidat)
 #' data = unidat
 #' library(minpack.lm)

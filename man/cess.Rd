@@ -30,7 +30,7 @@ Estimates of scale and scope economies including their standard errors (SE), low
 Calculate estimates of costs and economies of scale and scope from 25 to 200 \% levels at means
 }
 \examples{
-##Reproduce results of Zhang et al. (2016)
+##Reproduce results of Zhang et al. (in press)
 data(unidat)
 data = unidat
 library(minpack.lm)

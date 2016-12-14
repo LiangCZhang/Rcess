@@ -38,10 +38,10 @@
 #' }
 #' @source
 #' Australian Government Department of Education and Training. (n.d.-a). Higher education publications: Finance
-#' publication. Retrieved from \href{https://www.education.gov.au/finance-publication}https://www.education.gov.au/finance-publication
+#' publication. Retrieved from \href{https://www.education.gov.au/finance-publication}{https://www.education.gov.au/finance-publication}
 #'
 #' Australian Government Department of Education and Training. (n.d.-b). uCube - Higher education statistics.
-#' Retrieved from \href{http://highereducationstatistics.education.gov.au/Default.aspx}http://highereducationstatistics.education.gov.au/Default.aspx
+#' Retrieved from \href{http://highereducationstatistics.education.gov.au/Default.aspx}{http://highereducationstatistics.education.gov.au/Default.aspx}
 #'
 #' Zhang, L.-C., Worthington, A. C., & Hu, M. (in press). Cost economies in the provision
 #' of higher education for international students: Australian evidence. Higher Education. doi: \href{http://dx.doi.org/10.1007/s10734-016-0078-9}{10.1007/s10734-016-0078-9}

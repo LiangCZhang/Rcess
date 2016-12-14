@@ -16,7 +16,7 @@
 #' m1 = nls(c ~ b0+b1*y1,start=list(b0=1,b1=0), data = unidat)
 #' cluster.vcov(m2, petersen$firmid)
 #'
-#' ##Reproduce results of Table 4 in Zhang et al. (2016)
+#' ##Reproduce results of Table 4 in Zhang et al. (in press)
 #' data(unidat)
 #' library(minpack.lm)
 #' model <- nlsLM(costFunction(costName=colnames(unidat)[3],outputName = colnames(unidat)[7:11],priceName = colnames(unidat)[4:6],controlName = colnames(unidat)[12:24], form="FFCQ-M"),
