@@ -1,10 +1,6 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-### Description
+Rcess
+=====
 
 This package utilize the theory of economies of scale and scope (developed by Baumol, Panzar, & Willig (1982))to generate the estimates of average output costs, economies of scale, and economiece of scope for different types of multi-output production industries. So far, this package can reproduce the estimates using FFCQ-M cost function (see Zhang, Worthington, and Hu (in press) for details). This pacakge also offers a quick plotting method to infer the existence of economies of scale and scope. Please see demo below for details.
 
@@ -16,7 +12,7 @@ devtools::install_github("LiangCZhang/Rcess")
 
 ### Demo
 
-Generate estimates of costs and scale and scope economies
+#### Generate estimates of costs and scale and scope economies
 
 ``` r
 library(Rcess)
@@ -50,9 +46,7 @@ intervalPlot(intervalData = intervalData, estimates = intervalData$GSE, meanLeve
 #### Interval plot for ray economies of scale (SRAY)
 
 ``` r
-intervalPlot(intervalData = intervalData, estimates = intervalData$SRAY, meanLevels = intervalData$meanLevels,
-             lowerLevel = intervalData$Lo_SRAY,UpperLevel = intervalData$Hi_SRAY, ylab = "Degree of economies of scale",
-             h = 1,ylim = c(min(intervalData$Lo_SRAY,1),max(intervalData$Hi_SRAY)))
+intervalPlot(intervalData = intervalData, estimates = intervalData$SRAY, meanLevels = intervalData$meanLevels, lowerLevel = intervalData$Lo_SRAY,UpperLevel = intervalData$Hi_SRAY, ylab = "Degree of economies of scale", h = 1,ylim = c(min(intervalData$Lo_SRAY,1),max(intervalData$Hi_SRAY)))
 ```
 
 ![](README-unnamed-chunk-4-1.png)
