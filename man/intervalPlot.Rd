@@ -32,7 +32,7 @@ A interval plot
 Generate interval plot for inferring the existence of economies of scale or scope
 }
 \details{
-This function generates a interval plot (Zhang & Worthington, 2015) to infer the existence of scale and scope economies.
+This function generates a interval plot (Zhang, 2015) to infer the existence of scale and scope economies.
 If the intervals of point estimates do not include one for scale economies or zero for the scope economies,
 it suggests that these estimates are significantly different from the thresholds (one and zero,
 respectively) at the 5\% significance level. Thus, there is evidence for the existence of scale
@@ -73,7 +73,7 @@ Liang-Cheng Zhang
 Zhang, L.-C., Worthington, A. C., & Hu, M. (in press). Cost economies in the
 provision of higher education for international students: Australian evidence. Higher Education. doi: \href{http://dx.doi.org/10.1007/s10734-016-0078-9}{10.1007/s10734-016-0078-9}
 
-Zhang, L.-C., & Worthington, A. C. (2015). Inferring (dis)economies of scope with a
+Zhang, L.-C. (2015). Inferring (dis)economies of scope with a
 proper procedure: using an interval plot as an alternative solution. Paper presented
 at the 2015 AFE PhD Research Symposium in Economics, Economics and Business Statistics
 Discipline, Griffith Business School, Griffith University. \href{https://www.researchgate.net/publication/279849568_Inferring_diseconomies_of_scope_with_a_proper_procedure_Using_an_interval_plot_as_an_alternative_solution}{PDF Link}
