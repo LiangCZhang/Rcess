@@ -17,10 +17,14 @@
 #' @examples
 #' ##Specifiy arguments with user-identified names
 #' costFunction(costName="c",outputName = c("y1","y2"))
-#' costFunction(costName="c",outputName = c("y1","y2","y3"),priceName = c("w1","w2","w3"),controlName = c("z1","z2","z3"), form="FFCQ-M")
+#' costFunction(costName="c",outputName = c("y1","y2","y3"),
+#' priceName = c("w1","w2","w3"),controlName = c("z1","z2","z3"),
+#' form="FFCQ-M")
 #'
 #' ##Specifiy arguments with data' column names
-#' costFunction(costName=colnames(unidat)[3],outputName = colnames(unidat)[7:11],priceName = colnames(unidat)[4:6],controlName = colnames(unidat)[12:24], form="FFCQ-M")
+#' costFunction(costName=colnames(unidat)[3],outputName =
+#' colnames(unidat)[7:11],priceName = colnames(unidat)[4:6],
+#' controlName = colnames(unidat)[12:24], form="FFCQ-M")
 #' @export
 #' @importFrom stats as.formula
 #' @importFrom utils combn

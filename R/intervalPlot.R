@@ -15,6 +15,10 @@
 #' Zhang, L.-C., Worthington, A. C., & Hu, M. (in press). Cost economies in the
 #' provision of higher education for international students: Australian evidence. Higher Education. doi: \href{http://dx.doi.org/10.1007/s10734-016-0078-9}{10.1007/s10734-016-0078-9}
 #'
+#' Zhang, L.-C., & Worthington, A. C. (2015). Inferring (dis)economies of scope with a
+#' proper procedure: using an interval plot as an alternative solution. Paper presented
+#' at the 2015 AFE PhD Research Symposium in Economics, Economics and Business Statistics
+#' Discipline, Griffith Business School, Griffith University. \href{https://www.researchgate.net/publication/279849568_Inferring_diseconomies_of_scope_with_a_proper_procedure_Using_an_interval_plot_as_an_alternative_solution}{PDF Link}
 #' @examples
 #' #interval plot for GSE
 #' data(unidat)
@@ -31,17 +35,21 @@
 #'                                trace = F)
 #' vcovCL <- clusterEst(model = model , cluster = unidat$unicode)$vcovCL
 #' ##interval plot for GSE
-#' intervalPlot(intervalData = intervalData, estimates = intervalData$GSE, meanLevels = intervalData$meanLevels,
-#'              lowerLevel = intervalData$Lo_GSE,UpperLevel = intervalData$Hi_GSE, ylab = "Degree of economies of scope",h = 0,ylim = c(-1,1))
+#' intervalPlot(intervalData = intervalData, estimates = intervalData$GSE,
+#' meanLevels = intervalData$meanLevels, lowerLevel = intervalData$Lo_GSE,
+#' UpperLevel = intervalData$Hi_GSE, ylab = "Degree of economies of scope",
+#' h = 0,ylim = c(-1,1))
+#'
 #' ##interval plot for SRAY
-#' intervalPlot(intervalData = intervalData, estimates = intervalData$SRAY, meanLevels = intervalData$meanLevels,
-#'              lowerLevel = intervalData$Lo_SRAY,UpperLevel = intervalData$Hi_SRAY, ylab = "Degree of economies of scale",
-#'              h = 1,ylim = c(min(intervalData$Lo_SRAY,1),max(intervalData$Hi_SRAY)))
+#' intervalPlot(intervalData = intervalData, estimates = intervalData$SRAY,
+#' meanLevels = intervalData$meanLevels, lowerLevel = intervalData$Lo_SRAY,
+#' UpperLevel = intervalData$Hi_SRAY, ylab = "Degree of economies of scale",
+#' h = 1,ylim = c(min(intervalData$Lo_SRAY,1),max(intervalData$Hi_SRAY)))
 #' @details
-#' This function generates a interval plot to infer the existence of scale and scope economies.
+#' This function generates a interval plot (Zhang & Worthington, 2015) to infer the existence of scale and scope economies.
 #' If the intervals of point estimates do not include one for scale economies or zero for the scope economies,
 #' it suggests that these estimates are significantly different from the thresholds (one and zero,
-#' respectively) at the 5% significance level. Thus, there is evidence for the existence of scale
+#' respectively) at the 5\% significance level. Thus, there is evidence for the existence of scale
 #' and scope economies (if their intervals are higher than the threshold) or diseconomies (if their
 #' intervals are lower than the threshold).
 #' @export
@@ -60,6 +68,5 @@ intervalPlot <- function(intervalData = intervalData, estimates,
     lty = 2, lwd = 2)
   lines(intervalData$meanLevels, UpperLevel, col = "blue",
     lty = 2, lwd = 2)
-
 
 }

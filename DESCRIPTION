@@ -1,15 +1,17 @@
 Package: Rcess
 Type: Package
 Title: Rcess: An R package for calculating estimates of costs and economies of scale and scope
-Version: 0.0.1
+Version: 0.1.0
 Authors@R: c(
     person("Liang-Cheng", "Zhang", email = "liang.leon.c.z@gmail.com", role = "cre"),
     person("Liang-Cheng", "Zhang", email = "liang.leon.c.z@gmail.com", role = "aut"),
     person("Lj Stats", email = "liang.leon.c.z@gmail.com", role = "cph")
     )
-Description: This package utilize the theory of economies  of  scale  and  scope  (developed by Baumol, Panzar, & Willig (1982))to calculate the average output costs, economies of scale, and economiece of scope for  different  types  of  multi-output production  industries. So far, this package can reproduce the estimates using FFCQ-M cost function (see Zhang, Worthington, and Hu (in press) for details)
+Description: This package utilizes the theory of economies  of  scale  and  scope  (developed by Baumol, Panzar, & Willig (1982)) to calculate the average output costs, economies of scale, and economies of scope for  different  types  of  multi-output production  industries. So far, this package can reproduce the estimates using FFCQ-M cost function (see Zhang, Worthington, and Hu (in press) for details). This package is currently hosted on Github. Please click this link (https://github.com/LiangCZhang/Rcess) for how to use and install it 
 License:  MIT License
 Encoding: UTF-8
+URL: https://github.com/LiangCZhang/Rcess
+BugReports: https://github.com/LiangCZhang/Rcess/issues
 LazyData: true
 RoxygenNote: 5.0.1
 Imports: minpack.lm,

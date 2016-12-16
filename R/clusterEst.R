@@ -6,7 +6,7 @@
 #' @author
 #' Liang-Cheng Zhang
 #' @references
-#' Arai, M. (2015). Cluster-robust standard errors using R.
+#' Arai, M. (2015). Cluster-robust standard errors using R. \cr 
 #' Retrieved from \href{http://www.ne.su.se/polopoly_fs/1.216115.1426234213!/menu/standard/file/clustering1.pdf}{http://www.ne.su.se/polopoly_fs/1.216115.1426234213!/menu/standard/file/clustering1.pdf}
 #'
 #' Petersen, M. A. (2009). Estimating standard errors in finance panel data sets: Comparing approaches. Review of Financial Studies, 22(1), 435-480.
@@ -19,9 +19,15 @@
 #' ##Reproduce results of Table 4 in Zhang et al. (in press)
 #' data(unidat)
 #' library(minpack.lm)
-#' model <- nlsLM(costFunction(costName=colnames(unidat)[3],outputName = colnames(unidat)[7:11],priceName = colnames(unidat)[4:6],controlName = colnames(unidat)[12:24], form="FFCQ-M"),
-#'                , start=list(b0=600,b1=0,b2=0,b3=0,b4=0,b5=0,b11=0,b22=0,b33=0,b44=0,b55=0,b12=0,b13=0,b14=0,b15=0,b23=0,b24=0,b25=0,b34=0,b35=0,b45=0,bp2=0,bp3 = 0,bz1 = 0,bz2 = 0,bz3 = 0,bz4 = 0,bz5 = 0,bz6 = 0,bz7 = 0,bz8 = 0,bz9 = 0,bz10 = 0,bz11 = 0,bz12 = 0,bz13 = 0)
-#'                ,data=unidat,trace=F)
+#' model <- nlsLM(costFunction(costName = colnames(unidat)[3], outputName =
+#'colnames(unidat)[7:11], priceName = colnames(unidat)[4:6], controlName =
+#'  colnames(unidat)[12:24], form = "FFCQ-M"), start = list(b0 = 600,
+#'  b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b11 = 0, b22 = 0, b33 = 0, b44 = 0,
+#'  b55 = 0, b12 = 0, b13 = 0, b14 = 0, b15 = 0, b23 = 0, b24 = 0,
+#'  b25 = 0, b34 = 0, b35 = 0, b45 = 0, bp2 = 0, bp3 = 0, bz1 = 0,
+#'  bz2 = 0, bz3 = 0, bz4 = 0, bz5 = 0, bz6 = 0, bz7 = 0, bz8 = 0,
+#'  bz9 = 0, bz10 = 0, bz11 = 0, bz12 = 0, bz13 = 0), data = unidat,
+#'  trace = F)
 #' clusterEst(model = model , cluster = unidat$unicode)$model #extract summary results
 #' clusterEst(model = model , cluster = unidat$unicode)$vcovCL #extract covariance
 #' @import lmtest sandwich
