@@ -2,7 +2,7 @@
 Rcess
 =====
 
-This package utilizes the theory of economies of scale and scope (developed by Baumol, Panzar, & Willig (1982)) to generate the estimates of average output costs, economies of scale, and economies of scope for different types of multi-output production industries. So far, this package can reproduce the estimates using FFCQ-M cost function (see Zhang, Worthington, and Hu (in press) for details). This package also offers a quick plotting method (Zhang, 2015) to infer the existence of economies of scale and scope. A quick demonstration is also shown.
+This package utilizes the theory of economies of scale and scope (developed by Baumol, Panzar, & Willig (1982)) to generate the estimates of average output costs, economies of scale, and economies of scope for different types of multi-output production industries. So far, this package can reproduce the estimates using FFCQ-M cost function (see Zhang, Worthington, and Hu (2017) for details). This package also offers a quick plotting method (Zhang, 2015) to infer the existence of economies of scale and scope. A quick demonstration is also shown.
 
 Brief introduction
 ==================
@@ -14,7 +14,7 @@ However, estimating the cost economies above is generally not easy. The investig
 Demo
 ====
 
-In this section, we use Zhang, Worthington, and Hu (in press)'s study as an example. The first part teaches you how to install this package on R. The second part generates the estimates of cost economies (which are their results in Table 4 to Table 8) Notice that they only provides estimates of cost economies. In the remaining part of this section, we write a function to show the intervals of cost economies for inferring the existence of economies of scale and scope.
+In this section, we use Zhang, Worthington, and Hu (2017)'s study as an example. The first part teaches you how to install this package on R. The second part generates the estimates of cost economies (which are their results in Table 4 to Table 8) Notice that they only provides estimates of cost economies. In the remaining part of this section, we write a function to show the intervals of cost economies for inferring the existence of economies of scale and scope.
 
 #### Installation
 
@@ -84,4 +84,4 @@ Baumol, W. J., Panzar, J. C., & Willig, R. D. (1982). Contestable markets and th
 
 Zhang, L.-C.(2015). Inferring (dis)economies of scope with a proper procedure: using an interval plot as an alternative solution. Paper presented at the 2015 AFE PhD Research Symposium in Economics, Economics and Business Statistics Discipline, Griffith Business School, Griffith University. [PDF Link](https://www.researchgate.net/publication/279849568_Inferring_diseconomies_of_scope_with_a_proper_procedure_Using_an_interval_plot_as_an_alternative_solution)
 
-Zhang, L.-C., Worthington, A. C., & Hu, M. (in press). Cost economies in the provision of higher education for international students: Australian evidence. Higher Education. doi: [10.1007/s10734-016-0078-9](http://link.springer.com/article/10.1007/s10734-016-0078-9)
+Zhang, L.-C., Worthington, A. C., & Hu, M. (2017). Cost economies in the provision of higher education for international students: Australian evidence. Higher Education. doi: [10.1007/s10734-016-0078-9](http://link.springer.com/article/10.1007/s10734-016-0078-9)
